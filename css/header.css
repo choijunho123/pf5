@@ -1,0 +1,38 @@
+header#ttop {
+  padding-bottom: 20px;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  width: 200px;
+  height: 100%;
+  background-color: black;
+  left: 0;
+}
+header#ttop div.wrap {
+
+}
+header#ttop div.wrap h1 {
+  background-image: url("../img/logo.png");
+  width: 200px;
+  height: 140px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+header#ttop div.wrap ul {
+  padding-left: 20%;
+  line-height: 2;
+  font-size: 25px;
+}
+header#ttop div.wrap ul li {
+  display: flex;
+}
+header#ttop div.wrap ul li:hover a{  
+  color: wheat;
+  text-shadow: 2px 2px 4px;
+}
+header#ttop div.wrap ul li a {
+  color: white;
+  text-shadow: 1px 1px 5px;
+}

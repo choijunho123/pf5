@@ -1,0 +1,32 @@
+div#title {
+  background-image: url(../img/pen.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 200px;
+  height: 925px;
+}
+div#title div.wrap {
+
+}
+div#title div.wrap div.main-heading-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: calc(5%);
+}
+div#title div.wrap div.main-heading-wrapper h1.without-code {
+
+}
+div#title div.wrap button.toggle-menu {
+
+}
+div#title div.wrap button.toggle-menu span {
+
+}
+div#title div.wrap div#top {
+
+}
+div#title div.wrap #menu{ 
+}
