@@ -35,9 +35,10 @@ body {
   .form-control, 
   textarea {
     width: 400px;
-    background-color: #000;
-    color: #fff;
-    letter-spacing: 10px;
+    background-color: white;
+    color: black;
+    letter-spacing: 5px;
+    border: 1px solid;
   }  
   .send-button {
     margin-top: 15px;
