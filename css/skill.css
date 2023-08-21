@@ -9,7 +9,18 @@
   }
 }
 section#skill{  
-  background-color: white;
+  background-color: black;
+  position: relative;
+  height: 920px;
+}
+section#skill h2{
+  
+  /*! font-size: 45px; */
+  /*! color: white; */
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  width: calc(50%);
   position: relative;
 }
 section#skill div{  
@@ -17,10 +28,13 @@ section#skill div{
 }
 .progress {
   position: relative;
-  display: inline-block;
   padding: 0;
   text-align: center;
   width: calc(100% / 2);
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .progress > li {
   display: inline-block;
@@ -61,7 +75,7 @@ section#skill div{
   fill: none;
   stroke-width: 25;
   stroke-dasharray: 629;
-  stroke: #fff;
+  /*! stroke: #fff; */
   opacity: 0.9;
   -webkit-animation: load 10s;
           animation: load 10s;

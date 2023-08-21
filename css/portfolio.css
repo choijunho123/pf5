@@ -11,8 +11,17 @@
     overflow: hidden;
     height: auto;
     margin-left: 200px;
-    background-color: white;
+    background-color: black;
+    height: 100%;
   }
+.gallery h2{
+  
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  font: 300 60px 'Oswald', sans-serif;
+}
   .gallery ul {
     padding-top: 50px;
     position: relative;

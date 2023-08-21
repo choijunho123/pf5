@@ -22,8 +22,8 @@ header#ttop div.wrap h1 {
 }
 header#ttop div.wrap ul {
   padding-left: 20%;
-  line-height: 2;
-  font-size: 25px;
+  line-height: 3;
+  font-size: 30px;
 }
 header#ttop div.wrap ul li {
   display: flex;
