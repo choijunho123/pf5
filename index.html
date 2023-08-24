@@ -6,7 +6,6 @@
     <title>JH"포트폴리오</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/webflow.css">
     <link rel="stylesheet" href="css/header.css">
     <!-- 제이쿼리 -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -15,23 +14,21 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <!-- hamburger -->
     <link rel="stylesheet" href="css/hamburger.css">
-    <script  src="hamburger./script.js"></script>
+    <script  src="hamburger/script.js"></script>
     <!-- Title -->
     <link rel="stylesheet" href="css/title.css">
-    <!-- <link rel="stylesheet" href="css/effect.css"> -->
-    <script  src="effect./script.js"></script>
     <!-- About -->
     <link rel="stylesheet" href="css/about.css">
-    <script  src="about./script.js"></script>
+    <!-- <script  src="about/script.js"></script> -->
     <!-- skill -->
     <link rel="stylesheet" href="css/skill.css">
-    <script  src="skill./script.js"></script>
+    <!-- <script  src="skill/script.js"></script> -->
     <!-- 포트폴리오 -->
     <link rel="stylesheet" href="css/portfolio.css">
     <script src="ju/portfolio.js"></script>
     <!-- Contact -->
     <link rel="stylesheet" href="css/contact.css">
-    <script  src="contact./script.js"></script>
+    <!-- <script  src="contact/script.js"></script> -->
     <script>
         $(document).ready(function(){
             $(".list").clone().appendTo("#menu .main-nav");   //clone() 앞요소 복사 , appendTO("넣을태그") 복사한것에 이어 1개더 추가(붙이기)
@@ -39,12 +36,13 @@
     </script>
 </head>
 <body>
-    <header id="ttop">
+  <!-- Header -->
+    <header>
         <div class="wrap">
             <h1 class="h1"></h1></a>
             <ul class="list">
                 <li><a href="#title">HOME</a></li>
-                <li><a href="#aboutscroll">About</a></li>
+                <li><a href="#about">about</a></li>
                 <li><a href="#skill">Skill</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -52,7 +50,7 @@
         </div>
     </header>
     <!-- Title -->
-    <div id="title">
+    <section id="title">
       <div class="start-screen">
         <div class="loading">
           <div class="loading__element el1">W</div>
@@ -78,105 +76,42 @@
           <div class="loading__element el7">L</div>
           <div class="loading__element el8">I</div>
           <div class="loading__element el9">O</div>
+        </div>
+        <button class="toggle-menu">
+          <span></span>
+        </button>
+        <div id="top">
+        </div>
+        <div id="menu" class="">
+          <nav class="main-nav">          
+          </nav>
         </div>      
       </div>
-    </div>
+    </section>
     <!-- About -->
-    <section id="aboutscroll" class="slider-pages">
-        <article class="js-scrolling__page js-scrolling__page-1 js-scrolling--active">
-          <div class="slider-page slider-page--left">
-            <div class="slider-page--skew">
-              <div class="slider-page__content">
-              </div>
-              <!-- /.slider-page__content -->
-            </div>
-            <!-- /.slider-page--skew -->
+    <section id="about">
+      <div class="slider-content paddingT50">                  
+        <div class="slider-wrapper">
+          <div class="slider-container">                       
+            <div class="slide active" data-order="1">
+                <div class="slide-content txt">
+                  <div class="txt-wrapper">
+                    <span class="copy">Intro about me</span>
+                    <h2><span>Hello!</span> I’m Mr.Jun</h2>
+                    <span class="subtitle">Web publisher</span>
+                    <p class="excerpt">안녕하세요. WEB PUBLISHER 를 목표로 하고있는 사람입니다.</p>
+                    <h3 class="h3">경력</h3>
+                    <p class="excerpt">2023.06.09 ~ 2023.10.27 UI/UX웹디자인 학습</p>
+                    <p class="excerpt">2022.09.30 ~ 2023.01.31 올투딜리셔스 물류센터 근무</p>
+                  </div>
+                </div>
+                <div class="slide-content img">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/slider1.jpg" alt="" />
+                </div>
+              </div>  
           </div>
-          <!-- /.slider-page slider-page--left -->      
-          <div class="slider-page slider-page--right">
-            <div class="slider-page--skew">
-              <div class="slider-page__content">
-                <h1 class="slider-page__title slider-page__title--big">
-                  About
-                </h1>
-                <p>WEB PUBLISHER를 목표로 하고있는 "최준호"입니다.</p>
-                <!-- /.slider-page__title slider-page__title--big -->
-                <h2 class="slider-page__title">
-                  현재로 만족하지않고 계속 걸어가겠습니다.
-                </h2>
-                <!-- /.slider-page__title -->
-                <p class="slider-page__description">
-                  Please scroll down
-                </p>
-                <!-- /.slider-page__description -->
-              </div>
-              <!-- /.slider-page__content -->
-            </div>
-            <!-- /.slider-page--skew -->
-          </div>
-          <!-- /.slider-page slider-page--right -->
-        </article>
-        <!-- /.js-scrolling__page js-scrolling__page-1 js-scrolling--active -->
-        <article class="js-scrolling__page js-scrolling__page-2">
-          <div class="slider-page slider-page--left">
-            <div class="slider-page--skew">
-              <div class="slider-page__content">
-                <h1 class="slider-page__title">
-                  경력
-                  <p>2023.06.09 ~ 2023.10.27 [디지털디자인]UI/UX 웹디자인 학습</p>
-                </h1>
-                <!-- /.slider-page__title -->
-                <p class="slider-page__description">
-                  thank you
-                </p>
-                <!-- /.slider-page__description -->
-              </div>
-              <!-- /.slider-page__content -->
-            </div>
-            <!-- /.slider-page--skew -->
-          </div>
-          <!-- /.slider-page slider-page--left -->
-      
-          <div class="slider-page slider-page--right">
-            <div class="slider-page--skew">
-              <div class="slider-page__content">
-              </div>
-              <!-- /.slider-page__content -->
-            </div>
-            <!-- /.slider-page--skew -->
-          </div>
-          <!-- /.slider-page slider-page--right -->
-        </article>
-        <!-- /.js-scrolling__page js-scrolling__page-2 -->
-        <article class="js-scrolling__page js-scrolling__page-3">
-          <div class="slider-page slider-page--left">
-            <div class="slider-page--skew">
-              <div class="slider-page__content">
-              </div>
-              <!-- /.slider-page__content -->
-            </div>
-            <!-- /.slider-page--skew -->
-          </div>
-          <!-- /.slider-page slider-page--left -->      
-          <div class="slider-page slider-page--right">
-            <div class="slider-page--skew">
-              <div class="slider-page__content">
-                <h1 class="slider-page__title">
-                  This is the last page.
-                </h1>
-                <!-- /.slider-page__title -->
-                <p class="slider-page__description">
-                  Thank you for watching.
-                </p>
-                <!-- /.slider-page__description -->
-              </div>
-              <!-- /.slider-page__content -->
-            </div>
-            <!-- /.slider-page--skew -->
-          </div>
-          <!-- /.slider-page slider-page--right -->
-        </article>
-        <!-- /.js-scrolling__page js-scrolling__page-3 -->      
+        </div>
+      </div>
     </section>
     <!-- Skill -->
     <section id="skill">
@@ -215,7 +150,7 @@
               </svg>
           </li>
           <!--  Item  -->
-          <li data-name="jQuery Skill" data-percent="26%">
+          <li data-name="Jquery Skill" data-percent="26%">
               <svg viewBox="-10 -10 220 220">
               <g fill="none" stroke-width="12" transform="translate(100,100)">
               <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
@@ -320,44 +255,42 @@
               <a href="#" class="close"></a>
               <li>
                   <a href="#item01">
-                      <img src="https://cdn.dribbble.com/users/545884/screenshots/3981307/lorena2.png" alt="">
+                      <img src="" alt="">
                   </a>
-              </li>
-  
+              </li>  
               <li>
                   <a href="#item02">
-                      <img src="https://cdn.dribbble.com/users/545884/screenshots/3892302/contact.png" alt="">
+                      <img src="" alt="">
                   </a>
-              </li>
-  
+              </li>  
               <li>
                   <a href="#item03">
-                      <img src="https://cdn.dribbble.com/users/545884/screenshots/4154721/dive--001.png" alt="">
+                      <img src="" alt="">
                   </a>
               </li>
               <li>
                   <a class="image" href="#item04">
-                      <img src="https://cdn.dribbble.com/users/545884/screenshots/4356121/darko--dr.jpg" alt="">
+                      <img src="" alt="">
                   </a>
               </li>
               <li>
                   <a class="image" href="#item05">
-                      <img src="https://cdn.dribbble.com/users/545884/screenshots/3695553/news.png" alt="">
+                      <img src="" alt="">
                   </a>
               </li>
               <li>
                   <a class="image" href="#item06">
-                      <img src="https://cdn.dribbble.com/users/545884/screenshots/4360101/liberosis_--_12.png" alt="">
+                      <img src="" alt="">
                   </a>
               </li>
               <li>
                   <a class="image" href="#item07">
-                      <img src="https://cdn.dribbble.com/users/545884/screenshots/3148799/technical-book.jpg" alt="">
+                      <img src="" alt="">
                   </a>
               </li>
               <li>
                   <a class="image" href="#item08">
-                      <img src="https://cdn.dribbble.com/users/545884/screenshots/2883479/cover.jpg" alt="">
+                      <img src="" alt="">
                   </a>
               </li>
           </ul>
@@ -366,85 +299,87 @@
       <div id="item01" class="port">            
           <div class="row">
               <div class="description">
-                  <h1>Item 01</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+                  <h1>삼성전자 홈페이지 renewal</h1>
+                  <p>Samsung Electronics Homepage Renewal.</p>
+              </div>  
+                  <img src="img/cap1.PNG" alt="">
               </div>
-  
-                  <img src="https://cdn.dribbble.com/users/545884/screenshots/3981307/lorena2.png" alt="">
-              </div>
-          </div> <!-- / row -->        
-      </div> <!-- / Item 02 -->        
+          </div>        
+      </div>        
       <!-- Item 02 -->
       <div id="item02" class="port">            
           <div class="row">
               <div class="description">
-                  <h1>Item 02</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+                  <h1>한국알콜산업</h1>
+                  <p>Korea Alcohol Industry.</p>
               </div>
-              <img src="https://cdn.dribbble.com/users/545884/screenshots/3892302/contact.png" alt="">
-          </div> <!-- / row -->        
-      </div> <!-- / Item 02 -->
+              <img src="img/cap2.PNG" alt="">
+          </div>
+      </div>
       <!-- Item 03 -->
       <div id="item03" class="port">            
           <div class="row">
               <div class="description">
-                  <h1>Item 03</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+                  <h1>CGV</h1>
+                  <p>Arranged works of CGV.</p>
               </div>
-              <img src="https://cdn.dribbble.com/users/545884/screenshots/4154721/dive--001.png" alt="">
-          </div> <!-- / row -->        
-      </div> <!-- / Item 03 -->
+              <img src="img/cap3.PNG" alt="">
+          </div>
+      </div>
       <!-- Item 04 -->
       <div id="item04" class="port">            
           <div class="row">
               <div class="description">
-                  <h1>Item 04</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+                  <h1>개인포트폴리오 2번</h1>
+                  <p>This is the second work in my personal portfolio.
+                    There are parts missing and there are many missing parts.</p>
               </div>
-              <img src="https://cdn.dribbble.com/users/545884/screenshots/4356121/darko--dr.jpg" alt="">
-          </div> <!-- / row -->        
-      </div> <!-- / Item 04 -->
+              <img src="img/cap4.PNG" alt="">
+          </div>
+      </div>
       <!-- Item 05 -->
       <div id="item05" class="port">            
           <div class="row">
               <div class="description">
-                  <h1>Item 05</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+                  <h1>개인포트폴리오 1번</h1>
+                  <p>This is the first piece in my personal portfolio.
+                    It is a very inconvenient work due to lack of basic knowledge.</p>
               </div>
-              <img src="https://cdn.dribbble.com/users/545884/screenshots/3695553/news.png" alt="">
-          </div> <!-- / row -->        
-      </div> <!-- / Item 05 -->
+              <img src="img/cap5.PNG" alt="">
+          </div>
+      </div>
       <!-- Item 06 -->
       <div id="item06" class="port">            
           <div class="row">
               <div class="description">
-                  <h1>Item 06</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+                  <h1>Jquery</h1>
+                  <p>Website using Jqery</p>
               </div>
-              <img src="https://cdn.dribbble.com/users/545884/screenshots/4360101/liberosis_--_12.png" alt="">
-          </div> <!-- / row -->        
-      </div> <!-- / Item 06 -->
+              <img src="img/cap6.PNG" alt="">
+          </div>
+      </div>
       <!-- Item 07 -->
       <div id="item07" class="port">            
           <div class="row">
               <div class="description">
-                  <h1>Item 07</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+                  <h1>개인포트폴리오 3번</h1>
+                  <p>This is the 3rd part of my personal portfolio.
+                    I think it's a lot better than the first.</p>
               </div>
-              <img src="https://cdn.dribbble.com/users/545884/screenshots/3148799/technical-book.jpg" alt="">
-          </div> <!-- / row -->        
-      </div> <!-- / Item 07 -->
+              <img src="img/cap7.PNG" alt="">
+          </div>
+      </div>
       <!-- Item 08 -->
       <div id="item08" class="port">            
           <div class="row">
               <div class="description">
-                  <h1>Item 08</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+                  <h1>NCSOFT</h1>
+                  <p>Background picture of NC-SOFT.</p>
               </div>
-              <img src="https://cdn.dribbble.com/users/545884/screenshots/2883479/cover.jpg" alt="">
-          </div> <!-- / row -->        
-      </div> <!-- / Item 08 -->
-  </section>
+              <img src="img/cap8.PNG" alt="">
+          </div>
+      </div>
+    </section>
     <!-- Contact -->
     <section id="contact">
       <h1 class="section-header">Contact</h1>        

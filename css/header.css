@@ -1,4 +1,4 @@
-header#ttop {
+header .wrap{
   padding-bottom: 20px;
   position: fixed;
   z-index: 1;
@@ -7,11 +7,9 @@ header#ttop {
   height: 100%;
   background-color: black;
   left: 0;
+  padding-top: 35px;
 }
-header#ttop div.wrap {
-
-}
-header#ttop div.wrap h1 {
+header div.wrap h1 {
   background-image: url("../img/logo.png");
   width: 200px;
   height: 140px;
@@ -20,19 +18,19 @@ header#ttop div.wrap h1 {
   background-repeat: no-repeat;
   margin-bottom: 50px;
 }
-header#ttop div.wrap ul {
-  padding-left: 20%;
+header div.wrap ul {
+  padding-left: 15%;
   line-height: 3;
   font-size: 30px;
 }
-header#ttop div.wrap ul li {
+header div.wrap ul li {
   display: flex;
 }
-header#ttop div.wrap ul li:hover a{  
-  color: wheat;
+header div.wrap ul li:hover a{  
+  color: ghostwhite;
   text-shadow: 2px 2px 4px;
 }
-header#ttop div.wrap ul li a {
-  color: white;
-  text-shadow: 1px 1px 5px;
+header div.wrap ul li a {
+  color: ghostwhite;
+  text-shadow: 3px 0px 10px;
 }
