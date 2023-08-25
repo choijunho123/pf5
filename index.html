@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- 제이쿼리 -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://daks2k3a4ib2z.cloudfront.net/5317d67d660658b254000454/js/webflow.js?2f83b8326cc4c8f7327b5dba30444a37">
@@ -31,7 +32,10 @@
     <!-- <script  src="contact/script.js"></script> -->
     <script>
         $(document).ready(function(){
-            $(".list").clone().appendTo("#menu .main-nav");   //clone() 앞요소 복사 , appendTO("넣을태그") 복사한것에 이어 1개더 추가(붙이기)
+          $(".list").clone().appendTo("#menu .main-nav");   //clone() 앞요소 복사 , appendTO("넣을태그") 복사한것에 이어 1개더 추가(붙이기)
+          $("#menu .main-nav a").click(function(){
+            $("#menu").removeClass("open");
+          });      
         });
     </script>
 </head>
@@ -407,11 +411,11 @@
           <div class="direct-contact-container">      
             <ul class="contact-list">
               <li class="list-item"><i class="fa fa-map-marker fa-2x">
-                <span class="contact-text place">최준호</span></i></li>                
+                <span class="contact-text place">이름: 최준호</span></i></li>                
               <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone">
-                <a href="tel:1-212-555-5555" title="Give me a call">010-8573-5409</a></span></i></li>                
+                <a href="tel:1-212-555-5555" title="Give me a call">연락처: 010-8573-5409</a></span></i></li>                
               <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail">
-                <a href="mailto:#" title="Send me an email">wnsqks123@naver.com</a></span></i></li>                
+                <a href="mailto:#" title="Send me an email">E-Mali: wnsqks123@naver.com</a></span></i></li>                
             </ul>      
             <hr>
             <ul class="social-media-list">

@@ -1,0 +1,17 @@
+@media screen and (max-width:1140px){
+  header{
+    top: 0;
+    animation: none;
+  }
+  header .wrap{
+    background-color: transparent;
+    width: 100%;
+    animation: none;
+  }
+  header .wrap h1{
+    background-color: transparent;
+  }
+  header .wrap h1::before{
+    display: none;
+  }
+}
