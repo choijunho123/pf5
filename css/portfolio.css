@@ -154,13 +154,13 @@
     transition: all 0.5s ease-in-out;
   }
   .port img {
-    width: 50%;
+    width: 80%;
   }
   .port .description {
     float: left;
     width: 50%;
     max-height: 100%;
-    padding: 0 40px 40px;
+    padding: 0 0px 40px;
     overflow: auto;
     box-sizing: border-box;
     color: black;
@@ -169,6 +169,24 @@
     font-size: 35px;
     line-height: 2.3;
     padding: 0;
+  }
+  .port .description p{
+  line-height: 1.5;
+  }
+  .port .description a{  
+  width: 45px;
+  display: flex;
+  height: 45px;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  }
+  .port .description a:hover{    
+  background-color: royalblue;
+  color: white;
+  transition: all 1s;
   }
   .port > * {
     opacity: 0;

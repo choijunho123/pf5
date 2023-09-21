@@ -1,17 +1,57 @@
 @media screen and (max-width:1140px){
-  header{
-    top: 0;
-    animation: none;
+  header .wrap{    
+  background-color: transparent;
+  }
+  header div.wrap ul{    
+  display: none;
   }
   header .wrap{
-    background-color: transparent;
-    width: 100%;
-    animation: none;
+  position: absolute;
+  width: auto;
+  height: auto;
   }
-  header .wrap h1{
-    background-color: transparent;
+  header div.wrap h1{
+  /*! transform: scale(0.5); */
+  transform-origin: 0 0;
+  width: 111px;
+  height: 78px;
+  margin: 0;
   }
-  header .wrap h1::before{
+  header div.wrap p{
     display: none;
+  }
+  .start-screen{    
+  width: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  }
+  .slider-content{
+    
+  padding-top: 30px;
+  }
+  .slider-content .slide.active{
+    
+  margin: auto;
+  }
+  .slider-container .slide-content img{    
+  width: 0;
+  }
+  .slider-content .slide:nth-child(2n+1) .img{
+    
+  }
+  .slider-container .slide-content .txt-wrapper{   
+  left: 50px;
+  position: absolute;
+  }
+  section#skill div{  
+  width: 100%;
+  right: 0;
+  position: absolute;
+  }
+  .contact-wrapper{
+    left: 11%;
   }
 }

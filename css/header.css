@@ -19,7 +19,7 @@ header div.wrap h1 {
   margin-bottom: 50px;
 }
 header div.wrap ul {
-  padding-left: 15%;
+  padding-left: 23%;
   line-height: 3;
   font-size: 30px;
 }
@@ -33,4 +33,15 @@ header div.wrap ul li:hover a{
 header div.wrap ul li a {
   color: ghostwhite;
   text-shadow: 3px 0px 10px;
+  font-size: 22px;
+  line-height: 4;
+}
+header div.wrap p{
+  position: absolute;
+  left: 40px;
+  bottom: 54px;
+  font-size: 11px;
+  width: 57%;
+  line-height: 1.6;
+  color: #ccc;
 }
